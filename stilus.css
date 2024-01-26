@@ -1,0 +1,104 @@
+body{
+    background-image: url(Web_agazati_forras_A/hatterek/hatter1.jpg);
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"h h"
+                        "n n"
+                        "ar as"
+                        "f f";
+
+
+}
+
+header{
+    grid-area: h;
+
+}
+
+header h1{
+    letter-spacing: 5px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+nav{
+    grid-area: n;
+    background-color: blue;
+}
+nav li{
+    list-style: none;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 0px;
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+    
+}
+
+article{
+    grid-area: ar;
+    padding: 15px;
+    text-align: justify;
+}
+
+h2{
+    border-bottom: 5px solid black;
+}
+
+.kepek img{
+    float: right;
+    width: 200px;
+    border: 1px solid lightcyan;
+    padding: 5px;
+    margin-left: 12px;
+    border-radius: 5px;
+    
+}
+
+nav li:hover{
+    background-color: aqua;
+}
+
+aside{
+    grid-area: as;
+}
+
+aside img{ 
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    grid-area: f;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px){
+    main{  
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:"h"
+                            "n"
+                            "ar"
+                            "as"
+                            "f";}
+  
+
+}
